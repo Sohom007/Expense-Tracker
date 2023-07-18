@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home - Expense Tracker</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/style2.css') }}">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="width: auto; position: relative;  --bs-navbar-padding-y: 0.6rem; --bs-bg-opacity: .5">
+      <div class="container-fluid">
+        <span class="navbar-brand mx-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="#">Expense Tracker</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/home">Get started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 20px;" href="/support">Support us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 50px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact us
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="mailto:sohomdas98740@gmail.com">Email</a></li>
+                    <li class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://www.linkedin.com/in/sohom-das-001300225">Linkedin</a></li>
+                    <li class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://instagram.com/sohomdas001?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <span class="container3"></span>
+
+  <div class="container2" id="responsive-text1">
+      <h3 class="main-text1">Track Your Expenses Daily</h3>   
+  </div>
+
+  <div  class="container2" id="responsive-text2">
+      <h1 class="main-text2">PROSPER GRADUALLY</h1>
+  </div>
+
+  <div class="container2" id="responsive-text3" >
+      <h6 class="sub-text">&#60&#60;Start Tracking Your Spendings&#62&#62;</h6>
+  </div>
+
+
+  <form action="/" method="post">
+    <div class="container1">
+      <button type="submit" class="button"><a>Add Expense</a></button>
+    </div>
+  </form>
+
+  <footer class="footer footer-expand-sm bg-dark footer-dark" style="width: auto; position: relative;  --bs-footer-padding-y: 0.6rem; --bs-bg-opacity: .5">
+    <div class="footer-left"  style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+      <h4>Sohom Das</h4>
+      <p>3rd year Student<br>Information Technology, BTech<br>Techno International, New Town</p>
+      <p>West Bengal, India</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://instagram.com/sohomdas001?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img class="instagram-logo mb-1" src="../static/instagram-logo.png" alt="Instagram"></a>
+
+      <a href="https://www.facebook.com/sohom.das.9085?mibextid=ZbWKwL" target="_blank"><img class="facebook-logo  mb-1" src="../static/facebook-logo.png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/sohom-das-001300225" target="_blank"><img class="linkedin-logo  mb-1" src="../static/linkedin-logo.png" alt="Linkedin"></a>
+      <a href="https://github.com/Sohom007" target="_blank"><img class="github-logo" src="../static/github-logo.png" alt="GitHub"></a>
+    </div>
+    <hr class="footer-divider" style="height: 2px; color: #ffffff;">
+    <div class="footer-bottom">
+      <p>&copy; 2023 Sohom Das. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+<script>
+ /* window.addEventListener('resize', adjustFontSize);
+function adjustFontSize() {
+  var containers = [
+    { id: 'responsive-text1', textClass: 'main-text1', initialFontSize: 30 },
+    { id: 'responsive-text2', textClass: 'main-text2', initialFontSize: 70 },
+    { id: 'responsive-text3', textClass: 'sub-text', initialFontSize: 15 }
+    // Add more containers with their respective ID, text class, and initial font size as needed
+  ];
+  containers.forEach(function(container) {
+    var containerElement = document.getElementById(container.id);
+    var textElement = containerElement.querySelector('.' + container.textClass);
+    var containerWidth = containerElement.offsetWidth;
+    var maxWidth = containerWidth * 0.9; // Adjust this value as needed
+    var maxFontSize = 32; // Adjust this value as the maximum font size you desire
+    var fontSize = Math.min(container.initialFontSize, maxFontSize); // Set initial font size
+    // Reduce font size until it fits within the container width or reaches the maximum font size
+    while (textElement.offsetWidth > maxWidth && fontSize > 0 && fontSize < maxFontSize) {
+      fontSize--;
+      textElement.style.fontSize = fontSize + 'px';
+    }
+  });
+}
+function adjustFontSize() {
+  var container1 = document.getElementById("responsive-text1");
+  var text1 = container1.querySelector(".main-text1");
+  var container2 = document.getElementById("responsive-text2");
+  var text2 = container2.querySelector(".main-text2");
+  var container3 = document.getElementById("responsive-text3");
+  var text3 = container3.querySelector(".sub-text");
+  var containerWidth1 = container1.offsetWidth;
+  var containerWidth2 = container2.offsetWidth;
+  var containerWidth3 = container3.offsetWidth;
+  var maxWidth1 = containerWidth1 * 0.9;
+  var maxWidth2 = containerWidth2 * 0.9;
+  var maxWidth3 = containerWidth3 * 0.9;
+  var fontRatio1 = maxWidth1 / text1.offsetWidth;
+  var fontRatio2 = maxWidth2 / text2.offsetWidth;
+  var fontRatio3 = maxWidth3 / text3.offsetWidth;
+  var fontRatio = Math.min(fontRatio1, fontRatio2, fontRatio3);
+  var initialFontSize1 = parseFloat(getComputedStyle(text1).fontSize);
+  var initialFontSize2 = parseFloat(getComputedStyle(text2).fontSize);
+  var initialFontSize3 = parseFloat(getComputedStyle(text3).fontSize);
+  var newFontSize1 = initialFontSize1 * fontRatio;
+  var newFontSize2 = initialFontSize2 * fontRatio;
+  var newFontSize3 = initialFontSize3 * fontRatio;
+  text1.style.fontSize = newFontSize1 + "px";
+  text2.style.fontSize = newFontSize2 + "px";
+  text3.style.fontSize = newFontSize3 + "px";
+}
+window.addEventListener("resize", adjustFontSize);
+adjustFontSize(); // Run initially*/
+
+function adjustFontSize() {
+  var container1 = document.getElementById("responsive-text1");
+  var text1 = container1.querySelector(".main-text1");
+
+  var container2 = document.getElementById("responsive-text2");
+  var text2 = container2.querySelector(".main-text2");
+
+  var container3 = document.getElementById("responsive-text3");
+  var text3 = container3.querySelector(".sub-text");
+
+  var containerWidth1 = container1.offsetWidth;
+  var containerWidth2 = container2.offsetWidth;
+
+  var maxWidth1 = containerWidth1 * 0.7;
+  var maxWidth2 = containerWidth2 * 0.6;
+
+  var fontRatio1 = maxWidth1 / text1.offsetWidth;
+  var fontRatio2 = maxWidth2 / text2.offsetWidth;
+
+  var fontRatio = Math.min(fontRatio1, fontRatio2);
+
+  var initialFontSize1 = parseFloat(getComputedStyle(text1).fontSize);
+  var initialFontSize2 = parseFloat(getComputedStyle(text2).fontSize);
+
+  var newFontSize1 = Math.max(initialFontSize1 * fontRatio, 14); // Set a minimum font size of 14px
+  var newFontSize2 = Math.max(initialFontSize2 * fontRatio, 24); // Set a minimum font size of 24px
+
+  text1.style.fontSize = newFontSize1 + "px";
+  text2.style.fontSize = newFontSize2 + "px";
+
+  // Reset line-height for text1 and text2
+  var lineHeight1 = parseFloat(getComputedStyle(text1).lineHeight);
+  var lineHeight2 = parseFloat(getComputedStyle(text2).lineHeight);
+
+  text1.style.lineHeight = lineHeight1 / initialFontSize1 * newFontSize1 + "px";
+  text2.style.lineHeight = lineHeight2 / initialFontSize2 * newFontSize2 + "px";
+}
+
+window.addEventListener("resize", adjustFontSize);
+adjustFontSize(); // Run initially
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Support - Expense Tracker</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/style3.css') }}">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <title>Support Us</title>
+</head>
+
+<body style="background-color: rgb(131, 33, 222);">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"style="width: auto; position: relative;  --bs-navbar-padding-y: 0.6rem; --bs-bg-opacity: .5">
+    <div class="container-fluid">
+      <span class="navbar-brand mx-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="#">Expense Tracker</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" type="submit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin-right: 20px;" href="/home">Get started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 20px;" href="#">Support us</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;  margin-right: 50px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact us
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="mailto:sohomdas98740@gmail.com">Email</a></li>
+                  <li class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://www.linkedin.com/in/sohom-das-001300225">Linkedin</a></li>
+                  <li class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" target="_blank" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" href="https://instagram.com/sohomdas001?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="overlay-image">
+      <center><img src="{{ url_for('static', filename='../static/donate.jpg') }}" alt="Thank you for supporting" height="50%" width="50%"></center>
+    </div>
+  </main>
+  
+
+  <footer class="footer footer-expand-sm bg-dark footer-dark" style="width: auto; margin-top: 100px; --bs-footer-padding-y: 0.6rem; --bs-bg-opacity: .5">
+    <div class="footer-left"  style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+      <h4>Sohom Das</h4>
+      <p>3rd year Student<br>Information Technology, BTech<br>Techno International, New Town</p>
+      <p>West Bengal, India</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://instagram.com/sohomdas001?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img class="instagram-logo mb-1" src="../static/instagram-logo.png" alt="Instagram"></a>
+      
+      <a href="https://www.facebook.com/sohom.das.9085?mibextid=ZbWKwL" target="_blank"><img class="facebook-logo  mb-1" src="../static/facebook-logo.png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/sohom-das-001300225" target="_blank"><img class="linkedin-logo  mb-1" src="../static/linkedin-logo.png" alt="Linkedin"></a>
+      <a href="https://github.com/Sohom007" target="_blank"><img class="github-logo" src="../static/github-logo.png" alt="GitHub"></a>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Sohom Das. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.footer {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(70, 55, 242);
+  color: #ffffff;
+}
+
+.footer-left {
+  flex: 1;
+  margin-left: 1%;
+}
+
+.footer-left h4 {
+  margin-top: 0;
+}
+
+.footer-right {
+  margin-right: 3%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.footer-right a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.instagram-logo, .facebook-logo, .github-logo, .linkedin-logo {
+  width: 30px; /* Adjust the width as per your preference */
+  height: auto; /* Automatically adjust height based on width */
+}
+
+.divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+
